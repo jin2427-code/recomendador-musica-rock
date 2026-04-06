@@ -1,13 +1,22 @@
-nombre = input("nombre: ")
-print("bienvenido", nombre, "a tu recomendacion de rock")
-estado = input("¿como estas hoy? (feliz, triste, relajado, emocionado): ")
-if estado == "triste":
-    print("te recomiendo escuchar algo de: hey jude o No surprises")
-elif estado == "feliz":
-    print("algo de: te hacen falta vitaminas o el ataque de las chicas cocodrilo que te parece")
-elif estado == "relajado":
-    print("algo tranqui va que te parece:there is a light that never goes out o algo de back to the old house")
-elif estado == "emocionado":
-    print("estas emocionado va a ver que te parece: smell like teen spirit o american idiot")    
-else:
-    print("este se mejora en algun tiempo pero para mientras explora mas musica rock")
+print("recomendador de bandas de rock")
+while True:
+    print("\n¿como te sientes?")
+    print("1. tristre")
+    print("2. feliz")
+    print("3. relajado")
+    print("4. emocionado")
+    print("5. salir")
+    
+    opcion = input("elige una opcion (1-5): ")
+    if opcion == "1":
+        print("podrias escuchar algo de: boys dont cry o love my life ")
+    elif opcion == "2":
+        print("a ver algo como: Mr.Blue SKY o algo mas como here comes the sun")
+    elif opcion == "3":
+        print("algo relax: que te parece Sacr Tissue o The ZephyrSong")
+    elif opcion == "4":
+        print("algo emocionante en camino: que tal smell like teen spirit o american idiot")
+    elif opcion == "5":
+        print("adios espero que te haya ayudado")
+    else:
+        print("opcion invalida, intenta otra vez")
